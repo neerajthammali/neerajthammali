@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Code } from "lucide-react";
 
 const navLinks = [
+  { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
-  { href: "#skills", label: "Skills" },
-  { href: "#innovations", label: "Innovations" },
-  { href: "#achievements", label: "Achievements" },
+  { href: "#work", label: "Work" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -34,7 +34,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Code className="h-6 w-6 text-accent" />
+          <Code className="h-6 w-6 text-primary" />
           <span className="font-headline text-lg font-semibold">
             Neeraj Tammali
           </span>
@@ -44,14 +44,14 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-foreground/80 hover:text-accent transition-colors"
+              className="text-foreground/80 hover:text-primary transition-colors"
             >
               {link.label}
             </Link>
           ))}
         </nav>
         <Button asChild>
-          <a href="#contact">Connect with Me</a>
+          <a href="#contact">Get In Touch</a>
         </Button>
       </div>
     </header>

@@ -3,8 +3,8 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Neeraj Tammali | Portfolio",
-  description: "Founder of Hustler's Point | Digital Marketing & Personal Branding Specialist",
+  title: "Neeraj Tammali | Developer & Creator",
+  description: "I build innovative digital solutions that bridge the gap between technology and user needs.",
 };
 
 export default function RootLayout({
