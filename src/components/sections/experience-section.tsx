@@ -1,39 +1,61 @@
-import { Briefcase } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
+
+const experiences = [
+  {
+    role: "Founder",
+    company: "Hustler's Point",
+    period: "2022 - Present",
+    description: "Led a digital platform to empower entrepreneurs, designing and implementing marketing strategies and building a vibrant community.",
+    logo: "https://placehold.co/52x52.png",
+    logoHint: "logo letter H"
+  },
+  {
+    role: "Content Creator",
+    company: "Self-employed",
+    period: "2021 - Present",
+    description: "Developed and published technical content on growth hacking and digital marketing frameworks, reaching over 63,700 professionals on platforms like Fueler.",
+    logo: "https://placehold.co/52x52.png",
+    logoHint: "logo letter N"
+  },
+];
 
 export function ExperienceSection() {
-    const experiences = [
-        {
-          title: "Founder, Hustler's Point",
-          description: "Led a digital platform to empower entrepreneurs, designing and implementing marketing strategies and building a community.",
-        },
-        {
-          title: "Content Creator",
-          description: "Developed and published technical content on growth hacking and digital marketing frameworks, reaching over 60,000 professionals.",
-        },
-      ];
-
   return (
-    <section id="experience" className="w-full py-16 md:py-24 lg:py-32">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center text-center space-y-4 mb-16">
-          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Experience</h2>
-          <p className="max-w-[700px] text-muted-foreground md:text-xl">
-            My journey in building communities and creating content.
-          </p>
-        </div>
-        <div className="relative max-w-2xl mx-auto">
-          <div className="absolute left-0 top-0 h-full w-0.5 bg-border ml-3"></div>
-          {experiences.map((exp, index) => (
-            <div key={index} className="relative pl-10 mb-10">
-              <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-background border-2 border-primary flex items-center justify-center">
-                <Briefcase className="w-3 h-3 text-primary" />
+    <section id="experience" className="container mx-auto px-4 md:px-6 py-16 md:py-24">
+      <Card className="border-none shadow-none bg-transparent">
+        <CardHeader>
+          <CardTitle className="font-headline text-3xl md:text-4xl font-semibold">
+            Experience
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-8">
+            {experiences.map((exp, index) => (
+              <div key={index}>
+                <div className="flex gap-6">
+                  <Image 
+                    src={exp.logo} 
+                    alt={`${exp.company} logo`} 
+                    width={52} 
+                    height={52} 
+                    className="rounded-md"
+                    data-ai-hint={exp.logoHint}
+                  />
+                  <div className="flex-grow">
+                    <h3 className="font-semibold text-xl">{exp.role}</h3>
+                    <p className="text-muted-foreground">{exp.company}</p>
+                    <p className="text-sm text-muted-foreground">{exp.period}</p>
+                  </div>
+                </div>
+                <p className="mt-4 ml-[76px] text-foreground/80">{exp.description}</p>
+                {index < experiences.length - 1 && <Separator className="my-8" />}
               </div>
-              <h3 className="font-headline text-xl font-semibold">{exp.title}</h3>
-              <p className="mt-1 text-muted-foreground">{exp.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
     </section>
   );
 }
