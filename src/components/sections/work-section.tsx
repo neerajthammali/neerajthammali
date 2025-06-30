@@ -15,6 +15,12 @@ const projects = [
     hint: "talent discovery"
   },
   {
+    title: "SaaS Product Development",
+    description: "Involved in the conceptualization and development of SaaS products, focusing on creating intuitive user interfaces and solving real-world business problems.",
+    image: "https://placehold.co/600x400.png",
+    hint: "saas dashboard"
+  },
+  {
     title: "Assignment-based Hiring",
     description: "Implemented practical, assignment-based hiring solutions for companies to assess real-world skills and reduce hiring bias.",
     image: "https://placehold.co/600x400.png",

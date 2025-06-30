@@ -10,6 +10,14 @@ const education = [
     description: "Focused on structural analysis, construction planning, and sustainable engineering practices, while concurrently developing a strong foundation in digital marketing and web technologies through self-study.",
     logo: "https://placehold.co/52x52.png",
     logoHint: "logo building"
+  },
+  {
+    institution: "High School",
+    degree: "Secondary Schooling",
+    period: "Completed 2021",
+    description: "Completed secondary education with a focus on core subjects, developing a strong academic foundation.",
+    logo: "https://placehold.co/52x52.png",
+    logoHint: "school building"
   }
 ];
 
