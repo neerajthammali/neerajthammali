@@ -25,9 +25,9 @@ export function Footer() {
                     <Mail className="h-5 w-5" />
                     <span>neerajtammali2021@gmail.com</span>
                   </a>
-                   <a href="tel:9948075736" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                   <a href="#contact" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
                     <Phone className="h-5 w-5" />
-                    <span>+91 99480 75736</span>
+                    <span>Request a call</span>
                   </a>
                 </div>
                 <div className="flex items-center gap-4 pt-4">
