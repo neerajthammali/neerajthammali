@@ -32,8 +32,8 @@ const projects = [
   {
     title: "Hustler's Point",
     description: "A community for entrepreneurs where I share business research, strategies, and marketing tactics.",
-    image: "/hustlers-point.png",
-    hint: "hustlers point",
+    image: "https://placehold.co/600x400.png",
+    hint: "community branding",
     tags: ["Community", "Content Creation", "Business"],
     links: {
       subscription: "#",

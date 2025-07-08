@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -16,12 +15,6 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg">
                 <a href="#projects">Explore Projects</a>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <a href="/resume.pdf" download>
-                  Download Resume
-                  <Download />
-                </a>
               </Button>
             </div>
           </div>

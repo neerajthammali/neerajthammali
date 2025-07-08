@@ -11,6 +11,10 @@ import { NewsletterSection } from "@/components/sections/newsletter-section";
 import { CollaborationSection } from "@/components/sections/collaboration-section";
 import { MovingWordsSection } from "@/components/sections/moving-words-section";
 import { AssetsSection } from "@/components/sections/assets-section";
+import { PhilosophySection } from "@/components/sections/philosophy-section";
+import { InnovationsSection } from "@/components/sections/innovations-section";
+import { AchievementsSection } from "@/components/sections/achievements-section";
+import { ServicesSection } from "@/components/sections/services-section";
 
 export default function Home() {
   return (
@@ -18,12 +22,16 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
+        <PhilosophySection />
         <AboutSection />
         <MovingWordsSection />
+        <ServicesSection />
         <SkillsSection />
         <ToolsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <InnovationsSection />
+        <AchievementsSection />
         <AssetsSection />
         <EducationSection />
       </main>
