@@ -12,7 +12,7 @@ const skillCategories = [
         skills: ["Web Development", "SaaS Products Development", "HTML", "CSS", "React", "Python", "n8n", "Deployment", "Testing"]
     },
     {
-        title: "Software & Aptitude Skills",
+        title: "Professional Skills",
         skills: ["Deep Research", "Fluent Communication", "Content Writing", "Video Editing", "Content Creation", "Blogging", "Leadership", "Logic Solving", "Aptitude"]
     }
 ]
@@ -32,7 +32,7 @@ export function SkillsSection() {
                             <h3 className="font-semibold text-xl mb-4 text-center md:text-left">{category.title}</h3>
                             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                                 {category.skills.map(skill => (
-                                    <Badge key={skill} variant="outline" className="text-base py-2 px-4 rounded-md">{skill}</Badge>
+                                    <Badge key={skill} variant="outline" className="text-base py-2 px-4 rounded-md transition-colors hover:bg-accent hover:text-accent-foreground hover:border-accent">{skill}</Badge>
                                 ))}
                             </div>
                             {index < skillCategories.length - 1 && <Separator className="my-12" />}

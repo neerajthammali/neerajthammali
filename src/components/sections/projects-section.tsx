@@ -45,7 +45,7 @@ export function ProjectsSection() {
         <CardContent>
             <div className="grid gap-8 md:grid-cols-2">
                 {projects.map((project) => (
-                    <Card key={project.title} className="flex flex-col overflow-hidden group">
+                    <Card key={project.title} className="flex flex-col overflow-hidden group transition-all duration-300 hover:border-primary hover:shadow-primary/20 hover:shadow-lg">
                         <div className="overflow-hidden">
                           <Image
                               src={project.image}
