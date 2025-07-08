@@ -28,7 +28,7 @@ export async function PhilosophySection() {
                 <CardContent className="p-8">
                     <Quote className="w-8 h-8 text-accent mb-4" />
                     <blockquote className="text-xl md:text-2xl font-light italic text-foreground">
-                    People don&apos;t pay for products – they pay for outcomes. Validated proof-of-work is the ultimate career accelerator.
+                    My philosophy is simple: build things that create real value. I believe that a validated proof-of-work is more than just a resume item—it&apos;s the foundation for tangible outcomes and the inspiration for others to forge their own successful paths.
                     </blockquote>
                 </CardContent>
             </Card>
