@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { HardHat, Menu } from "lucide-react";
+import { HardHat, Menu, Info } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -13,8 +14,8 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet";
 
-const navLinks = [
-  { href: "#about", label: "About" },
+const navLinksData = [
+  { href: "/about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
@@ -22,6 +23,7 @@ const navLinks = [
 
 export function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const pathname = usePathname();
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +34,16 @@ export function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const navLinks = navLinksData.map(link => {
+    // If we're not on the homepage, and the link is an anchor, prepend it with '/'
+    if (pathname !== '/' && link.href.startsWith('#')) {
+        return { ...link, href: `/${link.href}` };
+    }
+    return link;
+  });
+
+  const contactHref = pathname === '/' ? '#contact' : '/#contact';
 
   return (
     <header
@@ -55,13 +67,14 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-foreground/80 hover:text-primary transition-colors"
+              className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1.5"
             >
+              {link.label === 'About' && <Info className="h-4 w-4" />}
               {link.label}
             </Link>
           ))}
            <Button asChild>
-             <a href="#contact">Get In Touch</a>
+             <a href={contactHref}>Get In Touch</a>
            </Button>
         </nav>
 
@@ -95,8 +108,9 @@ export function Header() {
                     <SheetClose asChild key={link.href}>
                       <Link
                         href={link.href}
-                        className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2"
+                        className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 flex items-center gap-2"
                       >
+                         {link.label === "About" && <Info className="h-5 w-5" />}
                         {link.label}
                       </Link>
                     </SheetClose>
@@ -104,7 +118,7 @@ export function Header() {
                 </nav>
                 <SheetClose asChild>
                   <Button asChild className="mt-8 w-full">
-                    <a href="#contact">Get In Touch</a>
+                    <a href={contactHref}>Get In Touch</a>
                   </Button>
                 </SheetClose>
               </div>
