@@ -10,9 +10,7 @@ export function HeroSection() {
               Civil Engineer & Tech Innovator
             </h1>
             <p className="max-w-2xl mx-auto text-muted-foreground md:text-xl">
-              As an expert in portfolio and resume building, I bridge the gap
-              between civil engineering principles and cutting-edge technology,
-              creating innovative solutions and empowering professionals.
+              Blending civil engineering precision with digital creativity, I build impactful solutions and help professionals forge their own paths.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg">
