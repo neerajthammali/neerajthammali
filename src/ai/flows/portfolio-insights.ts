@@ -9,7 +9,7 @@
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
-export const PortfolioInsightsOutputSchema = z.object({
+const PortfolioInsightsOutputSchema = z.object({
   summary: z.string().describe('A summary of the portfolio owner\'s philosophy, synthesized from the information provided.'),
 });
 export type PortfolioInsightsOutput = z.infer<typeof PortfolioInsightsOutputSchema>;
