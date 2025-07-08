@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Star } from "lucide-react";
 
 const skillCategories = [
     {
@@ -47,7 +48,8 @@ export function SkillsSection() {
                                         variant="outline"
                                         className="text-base py-2 px-4 rounded-md transition-colors hover:bg-accent hover:text-accent-foreground hover:border-accent"
                                     >
-                                        {skill}{highlightedSkills.has(skill) && ' ⭐'}
+                                        {skill}
+                                        {highlightedSkills.has(skill) && <Star className="ml-2 h-4 w-4 fill-current" />}
                                     </Badge>
                                 ))}
                             </div>
