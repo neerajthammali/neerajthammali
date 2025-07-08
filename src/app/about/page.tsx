@@ -70,16 +70,16 @@ export default function AboutPage() {
                     <h2 className="font-headline text-3xl font-semibold border-b pb-4">My Journey</h2>
                     <div className="text-muted-foreground text-lg space-y-4 leading-relaxed">
                         <p>
-                            My fascination with building things began in childhood, with a dream of designing great structures and architectures. This led me to pursue civil engineering, to learn how to create things that last.
+                            Ever since I was a kid, I dreamt of designing huge, amazing buildings. That’s why I dove into civil engineering—to learn the secrets of creating things that last a lifetime.
                         </p>
                         <p>
-                            The 2020 pandemic was a turning point. As the world moved online, I dove into the digital realm and discovered a new passion: creation through code. The ability to build something from nothing felt like a superpower. This led me to explore content creation, writing, and video editing.
+                            Then, the 2020 pandemic hit. The world went online, and I discovered a new kind of magic: coding. Being able to build something out of thin air with just a few lines of text felt like a superpower! This exciting new world led me to create content, write stories, and edit videos.
                         </p>
                         <p>
-                           My curiosity soon turned into freelance work and side hustles. I learned graphic design and web development, using tools like WordPress and Blogger to bring ideas to life. Recently, I've been captivated by the advancements in AI, constantly exploring new tools and finding joy in using them every day.
+                           My curiosity quickly grew into side projects and freelance work. I started designing graphics and building websites. Recently, I've been fascinated by AI. Playing with all the new AI tools is like having a super-smart friend to help me invent things, and it's my favorite part of the day.
                         </p>
                          <p>
-                           After five years, I see a clear path. My goal isn't to choose between civil engineering and technology—it's to integrate them. I'm using my childhood dream of building enduring structures as a foundation to create smart, innovative digital solutions that help people.
+                           After five years, I’ve found my true path. I don’t have to choose between my childhood dream and my new hobbies. I get to do both! I use my engineering skills to lay a solid foundation, and then bring it to life with technology to create smart tools that help everyone.
                         </p>
                     </div>
                 </div>
