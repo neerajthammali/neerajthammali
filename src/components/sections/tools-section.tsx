@@ -61,10 +61,8 @@ const NetlifyIcon = () => (
 );
 
 const WebflowIcon = () => (
-  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" fill="#4353FF"/>
-    <path d="M12 8V16L8 12L12 8Z" fill="white"/>
-    <path d="M16 8L12 12L16 16V8Z" fill="white"/>
+  <svg className="w-12 h-12" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.333 0H0V20H13.333C17.0152 20 20 17.0152 20 13.333V6.667C20 2.98482 17.0152 0 13.333 0ZM13.333 13.333H6.667V6.667L13.333 13.333Z" fill="#4353FF"/>
   </svg>
 );
 
@@ -83,16 +81,16 @@ const WordPressIcon = () => (
 );
 
 const WixIcon = () => (
-  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="24" height="24" rx="4" fill="black"/>
-    <text x="5" y="17" fontFamily="sans-serif" fontSize="10" fill="white" fontWeight="bold">Wix</text>
+  <svg className="w-12 h-12 text-white" viewBox="0 0 68 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.048 22.9V1.1h6.6l7.8 15.1V1.1h5.8v21.8h-6.1l-8.2-15.7v15.7h-5.9zM31.248 1.1h6.9v21.8h-6.9V1.1zM48.848 1.1l7.8 10.3 7.6-10.3h7.6v21.8h-6.7V8.5l-4.7 6.4-1.2 1.6h-5l-1.4-1.6-4.5-6.4v14.4h-6.8V1.1h7.9z"/>
   </svg>
 );
 
 const SemrushIcon = () => (
   <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="12" r="11" fill="#FF622D"/>
-    <text x="5" y="17" fontFamily="sans-serif" fontSize="8" fill="white" fontWeight="bold">SR</text>
+    <circle cx="12" cy="12" r="12" fill="#FF622D"/>
+    <circle cx="12" cy="12" r="6" stroke="white" strokeWidth="2.5"/>
+    <path d="M12 6C15.3137 6 18 8.68629 18 12" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
   </svg>
 );
 
@@ -113,30 +111,33 @@ const ChatGPTIcon = () => (
 
 const ClaudeIcon = () => (
   <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L3 22H21L12 2ZM12 7.61L17.07 19H6.93L12 7.61Z" fill="#D9B38B"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C12.9655 16 13.8447 15.6568 14.5029 15.0845C13.8569 14.072 13.5 12.8711 13.5 12C13.5 11.1289 13.8569 9.92797 14.5029 8.91549C13.8447 8.34316 12.9655 8 12 8Z" fill="#D9B38B"/>
   </svg>
 );
 
 const PerplexityIcon = () => (
-  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="24" height="24" rx="12" fill="currentColor" className="text-white"/>
-    <rect x="4" y="4" width="16" height="16" rx="8" fill="black"/>
-    <path d="M12 7V17" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-    <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8" stroke="white" strokeWidth="2"/>
-  </svg>
+    <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fillRule="evenodd" clipRule="evenodd" d="M10 4H4V10H10V4ZM4 12H10V18H4V12ZM12 4H18V10H12V4ZM18 12H12V18H18V12Z" fill="white"/>
+    </svg>
 );
 
 const MidjourneyIcon = () => (
-  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M2 15.5V17.5H22V15.5L12 6.5L2 15.5Z" stroke="white" strokeWidth="1.5" />
-    <path d="M10 17.5L8 20.5" stroke="white" strokeWidth="1.5" />
-    <path d="M14 17.5L16 20.5" stroke="white" strokeWidth="1.5" />
-  </svg>
+    <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 22H22L12 2Z" fill="white" fillOpacity="0.1"/>
+        <path d="M12 6L4 20H12V6Z" fill="white"/>
+        <path d="M12 6L20 20H12V6Z" fill="white" fillOpacity="0.7"/>
+    </svg>
 );
 
 const ElevenLabsIcon = () => (
   <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <text x="4" y="18" fontFamily="sans-serif" fontSize="14" fill="white" fontWeight="bold">11</text>
+    <rect x="2" y="10" width="2" height="4" rx="1" fill="white"/>
+    <rect x="5" y="8" width="2" height="8" rx="1" fill="white"/>
+    <rect x="8" y="5" width="2" height="14" rx="1" fill="white"/>
+    <rect x="11" y="8" width="2" height="8" rx="1" fill="white"/>
+    <rect x="14" y="10" width="2" height="4" rx="1" fill="white"/>
+    <rect x="17" y="11" width="2" height="2" rx="1" fill="white"/>
+    <rect x="20" y="8" width="2" height="8" rx="1" fill="white"/>
   </svg>
 );
 
@@ -199,8 +200,9 @@ const BubbleIcon = () => (
 
 const GumroadIcon = () => (
   <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="12" r="10" fill="#FF90E8"/>
-    <path d="M12 12C12 14.2091 10.2091 16 8 16C5.79086 16 4 14.2091 4 12C4 9.79086 5.79086 8 8 8C10.2091 8 12 9.79086 12 12ZM12 12H20" stroke="black" strokeWidth="3"/>
+    <circle cx="12" cy="12" r="12" fill="#FF90E8"/>
+    <path d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12" stroke="black" strokeWidth="2.5" strokeLinecap="round"/>
+    <circle cx="12" cy="10" r="1.5" fill="black"/>
   </svg>
 );
 
