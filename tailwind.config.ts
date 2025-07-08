@@ -89,11 +89,17 @@ export default {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
+        "text-gradient": {
+          to: {
+            backgroundPosition: "200% center",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "marquee": "marquee 40s linear infinite",
+        "text-gradient": "text-gradient 2s linear infinite",
       },
     },
   },
