@@ -68,6 +68,34 @@ const WebflowIcon = () => (
   </svg>
 );
 
+const BloggerIcon = () => (
+  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" rx="4" fill="#F57C00"/>
+    <text x="7" y="18" fontFamily="sans-serif" fontSize="14" fill="white" fontWeight="bold">B</text>
+  </svg>
+);
+
+const WordPressIcon = () => (
+  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="11" fill="#21759B"/>
+    <text x="6" y="18" fontFamily="sans-serif" fontSize="14" fill="white" fontWeight="bold">W</text>
+  </svg>
+);
+
+const WixIcon = () => (
+  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" rx="4" fill="black"/>
+    <text x="5" y="17" fontFamily="sans-serif" fontSize="10" fill="white" fontWeight="bold">Wix</text>
+  </svg>
+);
+
+const SemrushIcon = () => (
+  <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="11" fill="#FF622D"/>
+    <text x="5" y="17" fontFamily="sans-serif" fontSize="8" fill="white" fontWeight="bold">SR</text>
+  </svg>
+);
+
 const FirebaseIcon = () => (
   <svg className="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M10.835 50.3164L4.25 46.121L26.75 9.0625L32.25 13.2569L10.835 50.3164Z" fill="#FFC24A"/>
@@ -184,6 +212,10 @@ const tools = [
   { name: "Vercel", icon: <VercelIcon /> },
   { name: "Netlify", icon: <NetlifyIcon /> },
   { name: "Webflow", icon: <WebflowIcon /> },
+  { name: "Blogger", icon: <BloggerIcon /> },
+  { name: "WordPress", icon: <WordPressIcon /> },
+  { name: "Wix", icon: <WixIcon /> },
+  { name: "Semrush", icon: <SemrushIcon /> },
   { name: "Firebase", icon: <FirebaseIcon /> },
   { name: "ChatGPT", icon: <ChatGPTIcon /> },
   { name: "Claude", icon: <ClaudeIcon /> },
