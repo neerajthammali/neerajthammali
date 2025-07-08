@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Code, Menu } from "lucide-react";
+import { HardHat, Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -43,7 +43,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Code className="h-6 w-6 text-primary" />
+          <HardHat className="h-6 w-6 text-primary" />
           <span className="font-headline text-lg font-semibold">
             NEERAJ THAMMALI
           </span>
@@ -84,7 +84,7 @@ export function Header() {
               <div className="flex flex-col pt-6">
                 <SheetClose asChild>
                   <Link href="/" className="flex items-center gap-2 mb-8 self-start">
-                    <Code className="h-6 w-6 text-primary" />
+                    <HardHat className="h-6 w-6 text-primary" />
                     <span className="font-headline text-lg font-semibold">
                       NEERAJ THAMMALI
                     </span>
