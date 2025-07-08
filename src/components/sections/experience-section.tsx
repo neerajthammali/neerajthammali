@@ -1,5 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+const FreelanceIcon = () => (
+    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 border border-primary/20">
+        <span className="font-bold text-xl text-primary">F</span>
+    </div>
+);
+
 const ZunoIcon = () => (
     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 border border-primary/20">
         <span className="font-bold text-xl text-primary">Z</span>
@@ -18,6 +24,13 @@ const ScalerIcon = () => (
 
 
 const experiences = [
+  {
+    role: "Multidisciplinary Freelancer",
+    company: "Self-employed",
+    period: "Ongoing",
+    description: "Delivered freelance services in graphic design, home planning, and Amazon KDP, providing custom solutions to diverse clients.",
+    icon: <FreelanceIcon />
+  },
   {
     role: "Campus Ambassador",
     company: "ZUNO by foundit",
