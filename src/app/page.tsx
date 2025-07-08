@@ -4,6 +4,7 @@ import { ExperienceSection } from "@/components/sections/experience-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
 import { EducationSection } from "@/components/sections/education-section";
 import { SkillsSection } from "@/components/sections/skills-section";
+import { ToolsSection } from "@/components/sections/tools-section";
 import { Footer } from "@/components/sections/footer";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <SkillsSection />
+        <ToolsSection />
         <ProjectsSection />
         <ExperienceSection />
         <EducationSection />
