@@ -13,7 +13,7 @@ const skillCategories = [
     },
     {
         title: "Professional Skills",
-        skills: ["Deep Research", "Fluent Communication", "Content Writing", "Video Editing", "Content Creation", "Blogging", "Leadership", "Logic Solving", "Aptitude"]
+        skills: ["Leadership", "Team Management", "Problem Solving", "Negotiation", "Fluent Communication", "Attention to Detail", "Deep Research", "Content Creation", "Content Writing", "Video Editing", "Blogging"]
     }
 ]
 
