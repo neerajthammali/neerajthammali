@@ -11,7 +11,7 @@ export function AboutSection() {
         </CardHeader>
         <CardContent>
             <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed">
-              I'm a Civil Engineering student who loves to build things, both in the real world and with technology. My passion is fueled by the synergy between these two domains. While civil engineering offers the satisfaction of creating tangible, lasting structures, technology provides the power to scale those solutions and make them more efficient. I thrive on turning complex ideas into finished projects, whether a physical build or a digital product, and I excel at uniting teams around a common goal. Ultimately, I'm driven to solve tricky problems and build things that genuinely help people.
+              I'm a Civil Engineering student with a simple passion: I love to build things that help people. Think of it like this: with engineering, I can design a bridge to connect two towns. With technology, I can create an app that helps thousands of people use that bridge in the best way possible. I enjoy solving tricky puzzles and turning a complicated idea into a real, finished project. Whether it's a structure you can touch or a program on a screen, my goal is always to create something valuable and useful.
             </p>
         </CardContent>
       </Card>
