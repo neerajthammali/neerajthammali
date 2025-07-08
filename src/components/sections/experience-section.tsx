@@ -25,7 +25,7 @@ const ScalerIcon = () => (
 
 const experiences = [
   {
-    role: "Multidisciplinary Freelancer",
+    role: "Freelancer",
     company: "Self-employed",
     period: "Ongoing",
     description: "Delivered freelance services in graphic design, home planning, Amazon KDP, and digital product creation, providing custom solutions to diverse clients.",
