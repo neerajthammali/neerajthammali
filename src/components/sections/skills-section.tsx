@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
 
 const skillCategories = [
     {
@@ -46,14 +45,9 @@ export function SkillsSection() {
                                     <Badge
                                         key={skill}
                                         variant="outline"
-                                        className={cn(
-                                            "text-base py-2 px-4 rounded-md transition-colors hover:bg-accent hover:text-accent-foreground hover:border-accent",
-                                            {
-                                                "bg-accent text-accent-foreground border-accent": highlightedSkills.has(skill)
-                                            }
-                                        )}
+                                        className="text-base py-2 px-4 rounded-md transition-colors hover:bg-accent hover:text-accent-foreground hover:border-accent"
                                     >
-                                        {skill}
+                                        {skill}{highlightedSkills.has(skill) && ' ⭐'}
                                     </Badge>
                                 ))}
                             </div>
