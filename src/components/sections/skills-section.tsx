@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 const skillCategories = [
     {
@@ -15,7 +16,17 @@ const skillCategories = [
         title: "Professional Skills",
         skills: ["Leadership", "Team Management", "Problem Solving", "Negotiation", "Fluent Communication", "Attention to Detail", "Deep Research", "Content Creation", "Content Writing", "Video Editing", "Blogging"]
     }
-]
+];
+
+const highlightedSkills = new Set([
+    "AutoCAD",
+    "Problem Solving",
+    "Content Writing",
+    "Deployment",
+    "SaaS Products Development",
+    "Surveying"
+]);
+
 
 export function SkillsSection() {
     return (
@@ -32,7 +43,18 @@ export function SkillsSection() {
                             <h3 className="font-semibold text-xl mb-4 text-center md:text-left">{category.title}</h3>
                             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                                 {category.skills.map(skill => (
-                                    <Badge key={skill} variant="outline" className="text-base py-2 px-4 rounded-md transition-colors hover:bg-accent hover:text-accent-foreground hover:border-accent">{skill}</Badge>
+                                    <Badge
+                                        key={skill}
+                                        variant="outline"
+                                        className={cn(
+                                            "text-base py-2 px-4 rounded-md transition-colors hover:bg-accent hover:text-accent-foreground hover:border-accent",
+                                            {
+                                                "bg-accent text-accent-foreground border-accent": highlightedSkills.has(skill)
+                                            }
+                                        )}
+                                    >
+                                        {skill}
+                                    </Badge>
                                 ))}
                             </div>
                             {index < skillCategories.length - 1 && <Separator className="my-12" />}
