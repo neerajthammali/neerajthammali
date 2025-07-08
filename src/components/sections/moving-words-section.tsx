@@ -26,7 +26,7 @@ const MarqueeContent = () => (
 
 export function MovingWordsSection() {
   return (
-    <section className="w-full py-12 bg-muted/50 overflow-x-hidden">
+    <section className="w-full py-6 bg-muted/50 overflow-x-hidden">
       <div className="flex">
         <div className="flex shrink-0 animate-marquee items-center">
             <MarqueeContent />
