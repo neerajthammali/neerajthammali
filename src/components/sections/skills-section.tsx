@@ -4,16 +4,16 @@ import { Separator } from "@/components/ui/separator";
 
 const skillCategories = [
     {
-        title: "Digital Marketing & Strategy",
-        skills: ["Content Strategy", "Community Building", "Growth Hacking", "Personal Branding", "SEO/SEM", "Social Media Management"]
+        title: "Core Branch Skills",
+        skills: ["AutoCAD", "Site Engineer", "Project Management", "Revit", "Surveying", "GPS"]
     },
     {
-        title: "Development & Tools",
-        skills: ["Next.js", "React", "Genkit", "Tailwind CSS", "Web Analytics", "Firebase"]
+        title: "Computer Skills",
+        skills: ["Web Development", "SaaS Products Development", "HTML", "CSS", "React", "Python", "n8n", "Deployment", "Testing"]
     },
     {
-        title: "Civil Engineering",
-        skills: ["AutoCAD", "Structural Analysis", "Construction Planning", "Surveying Principles"]
+        title: "Software & Aptitude Skills",
+        skills: ["Deep Research", "Fluent Communication", "Content Writing", "Video Editing", "Content Creation", "Blogging", "Leadership", "Logic Solving", "Aptitude"]
     }
 ]
 
@@ -22,24 +22,22 @@ export function SkillsSection() {
         <section id="skills" className="container mx-auto px-4 md:px-6 py-16 md:py-24">
             <Card className="border-none shadow-none bg-transparent">
                 <CardHeader>
-                    <CardTitle className="font-headline text-3xl md:text-4xl font-semibold">
-                        Skills
+                    <CardTitle className="font-headline text-3xl md:text-4xl font-semibold text-center">
+                        My Skills
                     </CardTitle>
                 </CardHeader>
-                <CardContent>
-                    <div className="space-y-8">
-                        {skillCategories.map((category, index) => (
-                           <div key={category.title}>
-                                <h3 className="font-semibold text-xl mb-4">{category.title}</h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {category.skills.map(skill => (
-                                        <Badge key={skill} variant="secondary" className="text-base py-1 px-3">{skill}</Badge>
-                                    ))}
-                                </div>
-                                {index < skillCategories.length - 1 && <Separator className="my-8" />}
-                           </div>
-                        ))}
-                    </div>
+                <CardContent className="space-y-12">
+                    {skillCategories.map((category, index) => (
+                       <div key={category.title}>
+                            <h3 className="font-semibold text-xl mb-4 text-center md:text-left">{category.title}</h3>
+                            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                                {category.skills.map(skill => (
+                                    <Badge key={skill} variant="outline" className="text-base py-2 px-4 rounded-md">{skill}</Badge>
+                                ))}
+                            </div>
+                            {index < skillCategories.length - 1 && <Separator className="my-12" />}
+                       </div>
+                    ))}
                 </CardContent>
             </Card>
         </section>

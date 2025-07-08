@@ -1,27 +1,36 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Linkedin, Mail, Send, Github } from "lucide-react";
-import Link from "next/link";
+import { Linkedin, Send, Github, Instagram, Mail, Phone } from "lucide-react";
 
 const socialLinks = [
-    { href: "https://www.linkedin.com/in/neerajtammali/", label: "LinkedIn", icon: <Linkedin className="h-5 w-5" /> },
-    { href: "https://github.com/", label: "GitHub", icon: <Github className="h-5 w-5" /> },
-    { href: "#", label: "Fueler", icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5.5 17.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13zM5.5 17.5l13-13"></path><path d="M18.5 4.5l-5 5"></path><path d="M13.5 9.5l-5 5"></path></svg> },
-    { href: "mailto:neeraj@example.com", label: "Email", icon: <Mail className="h-5 w-5" /> },
+    { href: "https://github.com/neerajthammali", label: "GitHub", icon: <Github className="h-5 w-5" /> },
+    { href: "https://www.linkedin.com/in/neerajthammali/", label: "LinkedIn", icon: <Linkedin className="h-5 w-5" /> },
+    { href: "https://www.instagram.com/neerajthammali/", label: "Instagram", icon: <Instagram className="h-5 w-5" /> },
+    { href: "https://contra.com/neerajthammali", label: "Contra", icon: <span className="font-bold text-sm">C</span> },
 ];
 
 export function Footer() {
   return (
-    <footer id="contact" className="w-full py-16 md:py-24 bg-card border-t border-border">
+    <footer id="contact" className="w-full py-16 md:py-24 bg-muted/50 border-t border-border">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2">
             <div className="space-y-6">
-                <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">Let's Build Something</h2>
+                <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">Get In Touch</h2>
                 <p className="text-muted-foreground max-w-md">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out.
+                    I'm currently available for freelance work and open to discussing new projects. Feel free to reach out to me.
                 </p>
-                <div className="flex items-center gap-4">
+                <div className="space-y-4">
+                  <a href="mailto:neerajtammali2021@gmail.com" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                    <Mail className="h-5 w-5" />
+                    <span>neerajtammali2021@gmail.com</span>
+                  </a>
+                   <a href="tel:9948075736" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                    <Phone className="h-5 w-5" />
+                    <span>+91 99480 75736</span>
+                  </a>
+                </div>
+                <div className="flex items-center gap-4 pt-4">
                     {socialLinks.map(link => (
                         <Button key={link.label} variant="outline" size="icon" asChild>
                             <a href={link.href} aria-label={link.label} target="_blank" rel="noopener noreferrer">

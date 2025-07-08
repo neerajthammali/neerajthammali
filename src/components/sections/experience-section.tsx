@@ -1,23 +1,30 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
 const experiences = [
   {
-    role: "Founder",
-    company: "Hustler's Point",
-    period: "2022 - Present",
-    description: "Led a digital platform to empower entrepreneurs, designing and implementing marketing strategies and building a vibrant community.",
+    role: "Campus Ambassador",
+    company: "ZUNO by foundit",
+    period: "Present",
+    description: "Representing ZUNO on campus, organizing events, and promoting the platform to students.",
     logo: "https://placehold.co/52x52.png",
-    logoHint: "logo letter H"
+    logoHint: "logo letter Z"
   },
   {
-    role: "Content Creator",
-    company: "Self-employed",
-    period: "2021 - Present",
-    description: "Developed and published technical content on growth hacking and digital marketing frameworks, reaching over 63,700 professionals on platforms like Fueler.",
+    role: "Site Engineer / CAD Technician",
+    company: "RKJ Technology Pvt Ltd",
+    period: "6 Months",
+    description: "Gained hands-on experience in site engineering, AutoCAD drafting, and Revit modeling.",
     logo: "https://placehold.co/52x52.png",
-    logoHint: "logo letter N"
+    logoHint: "logo letter R"
+  },
+  {
+    role: "Internship Challenge Participant",
+    company: "Scaler School of Technology - YIIC 2.0",
+    period: "3 Months",
+    description: "Participated in a 3-month intensive internship challenge, developing skills in technology and project work.",
+    logo: "https://placehold.co/52x52.png",
+    logoHint: "logo letter S"
   },
 ];
 
@@ -26,33 +33,35 @@ export function ExperienceSection() {
     <section id="experience" className="container mx-auto px-4 md:px-6 py-16 md:py-24">
       <Card className="border-none shadow-none bg-transparent">
         <CardHeader>
-          <CardTitle className="font-headline text-3xl md:text-4xl font-semibold">
+          <CardTitle className="font-headline text-3xl md:text-4xl font-semibold text-center">
             Experience
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="space-y-8">
-            {experiences.map((exp, index) => (
-              <div key={index}>
-                <div className="flex gap-6">
-                  <Image 
-                    src={exp.logo} 
-                    alt={`${exp.company} logo`} 
-                    width={52} 
-                    height={52} 
-                    className="rounded-md"
-                    data-ai-hint={exp.logoHint}
-                  />
-                  <div className="flex-grow">
+          <div className="relative max-w-2xl mx-auto">
+            <div className="absolute left-6 top-0 h-full w-0.5 bg-border -z-10" />
+            <div className="space-y-12">
+              {experiences.map((exp) => (
+                <div key={exp.company} className="relative flex items-start gap-6">
+                   <div className="absolute left-0 top-0 flex items-center justify-center w-12 h-12 bg-background">
+                     <Image 
+                      src={exp.logo} 
+                      alt={`${exp.company} logo`} 
+                      width={40} 
+                      height={40} 
+                      className="rounded-full border"
+                      data-ai-hint={exp.logoHint}
+                    />
+                   </div>
+                  <div className="pl-16">
                     <h3 className="font-semibold text-xl">{exp.role}</h3>
                     <p className="text-muted-foreground">{exp.company}</p>
                     <p className="text-sm text-muted-foreground">{exp.period}</p>
+                    <p className="mt-2 text-foreground/80">{exp.description}</p>
                   </div>
                 </div>
-                <p className="mt-4 ml-[76px] text-foreground/80">{exp.description}</p>
-                {index < experiences.length - 1 && <Separator className="my-8" />}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </CardContent>
       </Card>
