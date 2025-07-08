@@ -20,8 +20,8 @@ const projects = [
   {
     title: "Hustler's Point",
     description: "A community for entrepreneurs where I share business research, strategies, and marketing tactics.",
-    image: "https://placehold.co/600x400.png",
-    hint: "community forum business",
+    image: "/hustlers-point.png",
+    hint: "hustlers point",
     tags: ["Community", "Content Creation", "Business"]
   },
   {
@@ -62,6 +62,7 @@ export function ProjectsSection() {
                             <div className="flex flex-wrap gap-2">
                                 {project.tags.map(tag => (
                                     <Badge key={tag} variant="secondary">{tag}</Badge>
+
                                 ))}
                             </div>
                         </div>
