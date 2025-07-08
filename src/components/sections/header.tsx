@@ -2,15 +2,18 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Code } from "lucide-react";
+import { Code, Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
-  { href: "#tools", label: "Tools" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -42,6 +45,8 @@ export function Header() {
             Neeraj Tammali
           </span>
         </Link>
+
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           {navLinks.map((link) => (
             <Link
@@ -52,10 +57,51 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+           <Button asChild>
+             <a href="#contact">Get In Touch</a>
+           </Button>
         </nav>
-        <Button asChild>
-          <a href="#contact">Get In Touch</a>
-        </Button>
+
+        {/* Mobile Navigation */}
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open navigation menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <div className="flex flex-col p-6 pt-12">
+                <SheetClose asChild>
+                  <Link href="/" className="flex items-center gap-2 mb-8 self-start">
+                    <Code className="h-6 w-6 text-primary" />
+                    <span className="font-headline text-lg font-semibold">
+                      Neeraj Tammali
+                    </span>
+                  </Link>
+                </SheetClose>
+                <nav className="flex flex-col gap-4">
+                  {navLinks.map((link) => (
+                    <SheetClose asChild key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2"
+                      >
+                        {link.label}
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </nav>
+                <SheetClose asChild>
+                  <Button asChild className="mt-8 w-full">
+                    <a href="#contact">Get In Touch</a>
+                  </Button>
+                </SheetClose>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
