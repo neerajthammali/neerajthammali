@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { AnnouncementBar } from "@/components/sections/announcement-bar";
 
 export const metadata: Metadata = {
   title: "NEERAJ THAMMALI | Civil Engineer & Tech Innovator",
@@ -27,6 +28,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
+        <AnnouncementBar />
         {children}
         <Toaster />
       </body>
