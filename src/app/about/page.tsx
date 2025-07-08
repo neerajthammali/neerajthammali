@@ -70,13 +70,16 @@ export default function AboutPage() {
                     <h2 className="font-headline text-3xl font-semibold border-b pb-4">My Journey</h2>
                     <div className="text-muted-foreground text-lg space-y-4 leading-relaxed">
                         <p>
-                            My journey began with a strong foundation in civil engineering, where I gained hands-on experience as a Site Engineer with RKJ Technology. This practical background fueled my desire to solve real-world problems.
+                            My fascination with building things began in childhood, with a dream of designing great structures and architectures. This led me to pursue civil engineering, to learn how to create things that last.
                         </p>
                         <p>
-                            Driven by a passion for technology, I ventured into the digital world. I've worked as a freelancer, creating custom solutions for clients, and dived deep into tech innovation during my internship at Scaler. This led me to build projects like ContractOS, a SaaS platform for contractors, and Hustler's Point, a community for entrepreneurs.
+                            The 2020 pandemic was a turning point. As the world moved online, I dove into the digital realm and discovered a new passion: creation through code. The ability to build something from nothing felt like a superpower. This led me to explore content creation, writing, and video editing.
                         </p>
                         <p>
-                            Today, I blend my engineering mindset with my tech skills, working to build products that are both robust and impactful. As a Campus Ambassador for ZUNO, I also enjoy sharing my passion and helping other students find their path.
+                           My curiosity soon turned into freelance work and side hustles. I learned graphic design and web development, using tools like WordPress and Blogger to bring ideas to life. Recently, I've been captivated by the advancements in AI, constantly exploring new tools and finding joy in using them every day.
+                        </p>
+                         <p>
+                           After five years, I see a clear path. My goal isn't to choose between civil engineering and technology—it's to integrate them. I'm using my childhood dream of building enduring structures as a foundation to create smart, innovative digital solutions that help people.
                         </p>
                     </div>
                 </div>
