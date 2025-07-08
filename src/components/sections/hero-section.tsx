@@ -26,12 +26,12 @@ export function HeroSection() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/400x400.png"
+              src="/neeraj-tammali.jpg"
               alt="Neeraj Tammali"
               width={400}
               height={400}
+              priority
               className="rounded-full object-cover border-4 border-primary/20 shadow-lg aspect-square"
-              data-ai-hint="profile portrait"
             />
           </div>
         </div>
