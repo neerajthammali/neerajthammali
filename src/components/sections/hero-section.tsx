@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -17,7 +18,10 @@ export function HeroSection() {
                 <a href="#projects">Explore Projects</a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="#contact">Let&apos;s Connect</a>
+                <a href="/resume.pdf" download>
+                  Download Resume
+                  <Download />
+                </a>
               </Button>
             </div>
           </div>
