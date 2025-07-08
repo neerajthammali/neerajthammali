@@ -1,4 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export function AboutSection() {
   return (
@@ -9,10 +12,17 @@ export function AboutSection() {
             About Me
           </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="space-y-8">
             <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed">
-              I'm a Civil Engineering student passionate about building real-world and technological projects, solving tricky problems, and creating things that help people. I enjoy turning a complicated idea into a real, finished project. Whether it's a structure you can touch or a program on a screen, my goal is always to create something valuable and useful.
+             My purpose is straightforward: I build things that create real value. Think of me as a bridge between two worlds. I use my civil engineering knowledge to design strong foundations, and my tech skills to build smart, helpful tools on top. Whether it's a physical structure or a digital product, I'm passionate about solving problems and creating tangible outcomes that make a difference.
             </p>
+            <div>
+              <Button asChild>
+                  <Link href="/about">
+                      Know more about me <ArrowRight className="ml-2" />
+                  </Link>
+              </Button>
+            </div>
         </CardContent>
       </Card>
     </section>
