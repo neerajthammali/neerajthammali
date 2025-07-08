@@ -8,6 +8,9 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 
 const navLinks = [
@@ -72,7 +75,13 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <div className="flex flex-col p-6 pt-12">
+              <SheetHeader className="sr-only">
+                <SheetTitle>Menu</SheetTitle>
+                <SheetDescription>
+                  A list of links to navigate the site.
+                </SheetDescription>
+              </SheetHeader>
+              <div className="flex flex-col pt-6">
                 <SheetClose asChild>
                   <Link href="/" className="flex items-center gap-2 mb-8 self-start">
                     <Code className="h-6 w-6 text-primary" />
