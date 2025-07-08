@@ -9,6 +9,7 @@ import { ToolsSection } from "@/components/sections/tools-section";
 import { Footer } from "@/components/sections/footer";
 import { NewsletterSection } from "@/components/sections/newsletter-section";
 import { CollaborationSection } from "@/components/sections/collaboration-section";
+import { MovingWordsSection } from "@/components/sections/moving-words-section";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <AboutSection />
+        <MovingWordsSection />
         <SkillsSection />
         <ToolsSection />
         <ExperienceSection />
