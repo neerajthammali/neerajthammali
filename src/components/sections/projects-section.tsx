@@ -34,7 +34,8 @@ const projects = [
     hint: "hustlers point",
     tags: ["Community", "Content Creation", "Business"],
     links: {
-      subscription: "#"
+      subscription: "#",
+      demo: "#"
     }
   },
   {
@@ -100,7 +101,7 @@ export function ProjectsSection() {
                                 {project.links?.subscription && (
                                     <Button asChild variant="outline" size="sm">
                                         <a href={project.links.subscription} target="_blank" rel="noopener noreferrer">
-                                            <Crown /> Subscription
+                                            <Crown /> View / Subscribe
                                         </a>
                                     </Button>
                                 )}
