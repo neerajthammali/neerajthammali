@@ -84,6 +84,18 @@ export default function AboutPage() {
                     </div>
                 </div>
 
+                <div className="space-y-6">
+                  <h2 className="font-headline text-3xl font-semibold border-b pb-4">Let's Connect</h2>
+                  <div className="text-muted-foreground text-lg space-y-4 leading-relaxed">
+                    <p>
+                      I'm excited to connect with others via <a href="mailto:neerajtammali2021@gmail.com" className="text-primary hover:underline">email</a> and on <a href="https://www.linkedin.com/in/neerajthammali/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">LinkedIn</a> to chat about projects and ideas.
+                    </p>
+                    <p>
+                      Currently, I'm open to discussing freelance projects and potential opportunities. If it's a good fit, I'd love to collaborate. I'm always looking to be part of something great.
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </div>
         </section>
