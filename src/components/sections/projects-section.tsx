@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, Crown, Eye } from "lucide-react";
@@ -14,7 +15,7 @@ const projects = [
     links: {
       github: "https://github.com/neerajthammali",
       demo: "#",
-      subscription: "#"
+      subscription: "/pricing"
     }
   },
   {
@@ -106,8 +107,14 @@ export function ProjectsSection() {
                                         </a>
                                     </Button>
                                 )}
-                                {project.links?.subscription && (
+                                {project.links.subscription && project.title === 'ContractOS' ? (
                                     <Button asChild variant="outline" size="sm">
+                                        <Link href={project.links.subscription}>
+                                            <Crown /> View Plans
+                                        </Link>
+                                    </Button>
+                                ) : project.links.subscription && (
+                                     <Button asChild variant="outline" size="sm">
                                         <a href={project.links.subscription} target="_blank" rel="noopener noreferrer">
                                             <Crown /> View / Subscribe
                                         </a>
