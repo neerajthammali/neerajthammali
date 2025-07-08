@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Neeraj Tammali | Civil Engineer & Tech Innovator",
+  title: "NEERAJ THAMMALI | Civil Engineer & Tech Innovator",
   description: "Expert in portfolio and resume building, bridging civil engineering with cutting-edge tech solutions.",
 };
 

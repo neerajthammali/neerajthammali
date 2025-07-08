@@ -45,7 +45,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Code className="h-6 w-6 text-primary" />
           <span className="font-headline text-lg font-semibold">
-            Neeraj Tammali
+            NEERAJ THAMMALI
           </span>
         </Link>
 
@@ -75,9 +75,9 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <SheetHeader className="sr-only">
-                <SheetTitle>Menu</SheetTitle>
-                <SheetDescription>
+              <SheetHeader>
+                <SheetTitle className="sr-only">Menu</SheetTitle>
+                <SheetDescription className="sr-only">
                   A list of links to navigate the site.
                 </SheetDescription>
               </SheetHeader>
@@ -86,7 +86,7 @@ export function Header() {
                   <Link href="/" className="flex items-center gap-2 mb-8 self-start">
                     <Code className="h-6 w-6 text-primary" />
                     <span className="font-headline text-lg font-semibold">
-                      Neeraj Tammali
+                      NEERAJ THAMMALI
                     </span>
                   </Link>
                 </SheetClose>

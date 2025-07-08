@@ -52,7 +52,7 @@ export function Footer() {
             </form>
         </div>
         <div className="mt-16 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Neeraj Tammali. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} NEERAJ THAMMALI. All rights reserved.</p>
         </div>
       </div>
     </footer>
