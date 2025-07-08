@@ -33,7 +33,7 @@ const experiences = [
     icon: <RkjIcon />
   },
   {
-    role: "Internship Challenge Participant",
+    role: "Young Innnovator internship",
     company: "Scaler School of Technology - YIIC 2.0",
     period: "3 Months",
     description: "Participated in a 3-month intensive internship challenge, developing skills in technology and project work.",
