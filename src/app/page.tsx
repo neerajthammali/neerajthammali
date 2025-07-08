@@ -8,6 +8,7 @@ import { SkillsSection } from "@/components/sections/skills-section";
 import { ToolsSection } from "@/components/sections/tools-section";
 import { Footer } from "@/components/sections/footer";
 import { NewsletterSection } from "@/components/sections/newsletter-section";
+import { CollaborationSection } from "@/components/sections/collaboration-section";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <EducationSection />
       </main>
       <NewsletterSection />
+      <CollaborationSection />
       <Footer />
     </div>
   );
