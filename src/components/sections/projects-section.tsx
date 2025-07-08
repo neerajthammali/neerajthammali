@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Github, ExternalLink, Crown } from "lucide-react";
 
 const projects = [
   {
@@ -8,28 +10,43 @@ const projects = [
     description: "A SaaS product designed for small-scale contractors and builders to manage their projects efficiently.",
     image: "https://placehold.co/600x400.png",
     hint: "saas dashboard project",
-    tags: ["SaaS", "Web Development", "Project Management"]
+    tags: ["SaaS", "Web Development", "Project Management"],
+    links: {
+      github: "https://github.com/neerajthammali",
+      demo: "#",
+      subscription: "#"
+    }
   },
   {
     title: "Manual Traffic Calculator",
     description: "A traffic engineering project for simple traffic volume calculation by differentiating vehicle types.",
     image: "https://placehold.co/600x400.png",
     hint: "traffic engineering chart",
-    tags: ["Civil Engineering", "Data Analysis"]
+    tags: ["Civil Engineering", "Data Analysis"],
+    links: {
+      github: "https://github.com/neerajthammali"
+    }
   },
   {
     title: "Hustler's Point",
     description: "A community for entrepreneurs where I share business research, strategies, and marketing tactics.",
     image: "/hustlers-point.png",
     hint: "hustlers point",
-    tags: ["Community", "Content Creation", "Business"]
+    tags: ["Community", "Content Creation", "Business"],
+    links: {
+      subscription: "#"
+    }
   },
   {
     title: "AI Chatbot Integration",
     description: "Integrated a custom AI chatbot into a web application to improve user engagement and provide instant support.",
     image: "https://placehold.co/600x400.png",
     hint: "ai chatbot code",
-    tags: ["AI", "Web Development", "Python"]
+    tags: ["AI", "Web Development", "Python"],
+    links: {
+      github: "https://github.com/neerajthammali",
+      demo: "#"
+    }
   }
 ];
 
@@ -64,6 +81,29 @@ export function ProjectsSection() {
                                     <Badge key={tag} variant="secondary">{tag}</Badge>
 
                                 ))}
+                            </div>
+                            <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-border/20">
+                                {project.links?.github && (
+                                    <Button asChild variant="outline" size="sm">
+                                        <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                                            <Github /> GitHub
+                                        </a>
+                                    </Button>
+                                )}
+                                {project.links?.demo && (
+                                    <Button asChild variant="outline" size="sm">
+                                        <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
+                                            <ExternalLink /> Demo
+                                        </a>
+                                    </Button>
+                                )}
+                                {project.links?.subscription && (
+                                    <Button asChild variant="outline" size="sm">
+                                        <a href={project.links.subscription} target="_blank" rel="noopener noreferrer">
+                                            <Crown /> Subscription
+                                        </a>
+                                    </Button>
+                                )}
                             </div>
                         </div>
                     </Card>
