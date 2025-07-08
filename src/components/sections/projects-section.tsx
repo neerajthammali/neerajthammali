@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink, Crown } from "lucide-react";
+import { Github, ExternalLink, Crown, Eye } from "lucide-react";
 
 const projects = [
   {
@@ -24,7 +24,8 @@ const projects = [
     hint: "traffic engineering chart",
     tags: ["Civil Engineering", "Data Analysis"],
     links: {
-      github: "https://github.com/neerajthammali"
+      github: "https://github.com/neerajthammali",
+      view: "#"
     }
   },
   {
@@ -88,6 +89,13 @@ export function ProjectsSection() {
                                     <Button asChild variant="outline" size="sm">
                                         <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                                             <Github /> GitHub
+                                        </a>
+                                    </Button>
+                                )}
+                                {project.links?.view && (
+                                    <Button asChild variant="outline" size="sm">
+                                        <a href={project.links.view} target="_blank" rel="noopener noreferrer">
+                                            <Eye /> View
                                         </a>
                                     </Button>
                                 )}
