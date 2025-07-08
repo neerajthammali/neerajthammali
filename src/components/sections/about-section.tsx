@@ -11,7 +11,7 @@ export function AboutSection() {
         </CardHeader>
         <CardContent>
             <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed">
-              I'm a Civil Engineering student with a simple passion: I love to build things that help people. Think of it like this: with engineering, I can design a bridge to connect two towns. With technology, I can create an app that helps thousands of people use that bridge in the best way possible. I enjoy solving tricky puzzles and turning a complicated idea into a real, finished project. Whether it's a structure you can touch or a program on a screen, my goal is always to create something valuable and useful.
+              I'm a Civil Engineering student passionate about building real-world and technological projects, solving tricky problems, and creating things that help people. I enjoy turning a complicated idea into a real, finished project. Whether it's a structure you can touch or a program on a screen, my goal is always to create something valuable and useful.
             </p>
         </CardContent>
       </Card>
