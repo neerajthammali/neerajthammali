@@ -33,8 +33,8 @@ export function EducationSection() {
                     <GraduationCap className="h-6 w-6 text-primary" />
                   </div>
                   <div className="flex-grow">
-                    <h3 className="font-semibold text-xl">{edu.institution}</h3>
-                    <p className="text-muted-foreground">{edu.degree}</p>
+                    <h3 className="font-semibold text-xl">{edu.degree}</h3>
+                    <p className="text-muted-foreground">{edu.institution}</p>
                     <p className="text-sm text-muted-foreground">{edu.period}</p>
                   </div>
                 </div>
