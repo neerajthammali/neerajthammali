@@ -59,7 +59,7 @@ export function ProjectsSection() {
        <Card className="border-none shadow-none bg-transparent">
         <CardHeader>
            <CardTitle className="font-headline text-3xl md:text-4xl font-semibold text-center">
-            Projects
+            Some cool stuff I've built
           </CardTitle>
         </CardHeader>
         <CardContent>
