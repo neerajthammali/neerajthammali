@@ -4,14 +4,14 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    institution: "JNGP, Ramanthapur",
+    institution: "Jawaharlal Nehru Government Polytechnic, Ramanthapur",
     degree: "Diploma in Civil Engineering",
-    period: "2021 - 2024",
+    period: "2022 - 2025",
   },
   {
-    institution: "SSC",
-    degree: "10th Grade",
-    period: "Completed 2021",
+    institution: "St. Mary's ELM High School, Shadnagar",
+    degree: "SSC",
+    period: "Completed 2022",
   }
 ];
 
