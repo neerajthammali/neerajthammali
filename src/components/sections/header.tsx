@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { HardHat, Menu, Info } from "lucide-react";
+import { HardHat, Menu, Info, Star, Lightbulb, Mail } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -15,10 +15,10 @@ import {
 } from "@/components/ui/sheet";
 
 const navLinksData = [
-  { href: "/about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/about", label: "About", icon: Info },
+  { href: "#skills", label: "Skills", icon: Star },
+  { href: "#projects", label: "Projects", icon: Lightbulb },
+  { href: "#contact", label: "Contact", icon: Mail },
 ];
 
 export function Header() {
@@ -63,14 +63,14 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          {navLinks.map((link) => (
+          {navLinks.map(({ href, label, icon: Icon }) => (
             <Link
-              key={link.href}
-              href={link.href}
+              key={href}
+              href={href}
               className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1.5"
             >
-              {link.label === 'About' && <Info className="h-4 w-4" />}
-              {link.label}
+              <Icon className="h-4 w-4" />
+              {label}
             </Link>
           ))}
            <Button asChild>
@@ -104,14 +104,14 @@ export function Header() {
                   </Link>
                 </SheetClose>
                 <nav className="flex flex-col gap-4">
-                  {navLinks.map((link) => (
-                    <SheetClose asChild key={link.href}>
+                  {navLinks.map(({ href, label, icon: Icon }) => (
+                    <SheetClose asChild key={href}>
                       <Link
-                        href={link.href}
+                        href={href}
                         className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 flex items-center gap-2"
                       >
-                         {link.label === "About" && <Info className="h-5 w-5" />}
-                        {link.label}
+                        <Icon className="h-5 w-5" />
+                        {label}
                       </Link>
                     </SheetClose>
                   ))}
