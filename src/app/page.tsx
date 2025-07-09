@@ -10,7 +10,6 @@ import { Footer } from "@/components/sections/footer";
 import { NewsletterSection } from "@/components/sections/newsletter-section";
 import { CollaborationSection } from "@/components/sections/collaboration-section";
 import { MovingWordsSection } from "@/components/sections/moving-words-section";
-import { InnovationsSection } from "@/components/sections/innovations-section";
 import { AchievementsSection } from "@/components/sections/achievements-section";
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
         <ToolsSection />
         <ExperienceSection />
         <ProjectsSection />
-        <InnovationsSection />
         <AchievementsSection />
         <EducationSection />
       </main>
