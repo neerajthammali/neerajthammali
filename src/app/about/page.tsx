@@ -55,13 +55,10 @@ export default function AboutPage() {
                   <h2 className="font-headline text-3xl font-semibold border-b pb-4">Short Bio</h2>
                   <div className="text-muted-foreground text-lg space-y-4 leading-relaxed">
                     <p>
-                      I'm a product maker and civil engineer currently based in Hyderabad, India. I'm passionate about building products that help people and make a difference in the world.
+                      I'm a product maker and civil engineer from Hyderabad, India, passionate about building products that create real value. I bridge civil engineering principles with technology to build smart, helpful tools.
                     </p>
                     <p>
-                      I'm also a big fan of open source and building in public. My purpose is straightforward: I build things that create real value. Think of me as a bridge between two worlds. I use my civil engineering knowledge to design strong foundations, and my tech skills to build smart, helpful tools on top.
-                    </p>
-                    <p>
-                      I also love educating others about technology and business strategies, which is why I'm a content creator and write on my blog, Hustler's Point, in my free time.
+                      As a believer in open source and building in public, I also enjoy educating others about technology and business on my blog, Hustler's Point.
                     </p>
                   </div>
                 </div>
@@ -70,16 +67,10 @@ export default function AboutPage() {
                     <h2 className="font-headline text-3xl font-semibold border-b pb-4">My Journey</h2>
                     <div className="text-muted-foreground text-lg space-y-4 leading-relaxed">
                         <p>
-                            Ever since I was a kid, I dreamt of designing huge, amazing buildings. That’s why I dove into civil engineering—to learn the secrets of creating things that last a lifetime.
+                            My childhood dream was designing massive structures, which led me to civil engineering. The 2020 pandemic introduced me to coding, which felt like a superpower.
                         </p>
                         <p>
-                            Then, the 2020 pandemic hit. The world went online, and I discovered a new kind of magic: coding. Being able to build something out of thin air with just a few lines of text felt like a superpower! This exciting new world led me to create content, write stories, and edit videos.
-                        </p>
-                        <p>
-                           My curiosity quickly grew into side projects and freelance work. I started designing graphics and building websites. Recently, I've been fascinated by AI. Playing with all the new AI tools is like having a super-smart friend to help me invent things, and it's my favorite part of the day.
-                        </p>
-                         <p>
-                           After five years, I’ve found my true path. I don’t have to choose between my childhood dream and my new hobbies. I get to do both! I use my engineering skills to lay a solid foundation, and then bring it to life with technology to create smart tools that help everyone.
+                           This newfound passion grew into side projects, freelance work in web development and design, and a deep fascination with AI. Now, I combine both worlds: using engineering for solid foundations and technology to bring ideas to life.
                         </p>
                     </div>
                 </div>

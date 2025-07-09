@@ -86,38 +86,37 @@ export function ProjectsSection() {
                             <div className="flex flex-wrap gap-2">
                                 {project.tags.map(tag => (
                                     <Badge key={tag} variant="secondary">{tag}</Badge>
-
                                 ))}
                             </div>
                             <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-border/20">
-                                {project.links?.github && (
+                                {project.links?.github && project.links.github !== "#" && (
                                     <Button asChild variant="outline" size="sm">
                                         <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                                             <Github /> GitHub
                                         </a>
                                     </Button>
                                 )}
-                                {project.links?.view && (
+                                {project.links?.view && project.links.view !== "#" && (
                                     <Button asChild variant="outline" size="sm">
                                         <a href={project.links.view} target="_blank" rel="noopener noreferrer">
                                             <Eye /> View
                                         </a>
                                     </Button>
                                 )}
-                                {project.links?.demo && (
+                                {project.links?.demo && project.links.demo !== "#" && (
                                     <Button asChild variant="outline" size="sm">
                                         <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
                                             <ExternalLink /> Demo
                                         </a>
                                     </Button>
                                 )}
-                                {project.links.subscription && project.title === 'ContractOS' ? (
+                                {project.links.subscription && project.links.subscription !== "#" && project.title === 'ContractOS' ? (
                                     <Button asChild variant="outline" size="sm">
                                         <Link href={project.links.subscription}>
                                             <Crown /> View Plans
                                         </Link>
                                     </Button>
-                                ) : project.links.subscription && (
+                                ) : project.links.subscription && project.links.subscription !== "#" && (
                                      <Button asChild variant="outline" size="sm">
                                         <a href={project.links.subscription} target="_blank" rel="noopener noreferrer">
                                             <Crown /> View / Subscribe
