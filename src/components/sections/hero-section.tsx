@@ -6,7 +6,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 gap-12 items-center">
           <div className="space-y-6 text-center">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
+            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-primary via-accent to-primary bg-[200%_auto] bg-clip-text text-transparent animate-text-gradient">
               Civil Engineer & Tech Innovator
             </h1>
             <p className="max-w-2xl mx-auto text-muted-foreground md:text-xl">
