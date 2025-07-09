@@ -7,14 +7,14 @@ import { Github, ExternalLink, Crown, Eye } from "lucide-react";
 
 const projects = [
   {
-    title: "ContractOS",
+    title: "ProjectWise",
     description: "A SaaS product designed for small-scale contractors and builders to manage their projects efficiently.",
     image: "https://placehold.co/600x400.png",
     hint: "saas dashboard project",
     tags: ["SaaS", "Web Development", "Project Management"],
     links: {
-      github: "https://github.com/neerajthammali",
-      demo: "#",
+      github: "https://github.com/neerajthammali/projectwise",
+      demo: "projectwise.vercel.app",
       subscription: "/pricing"
     }
   },
@@ -36,8 +36,8 @@ const projects = [
     hint: "community branding",
     tags: ["Community", "Content Creation", "Business"],
     links: {
-      subscription: "#",
-      demo: "#"
+      subscription: "https://www.linkedin.com/newsletters/hustlers-point-7233874067701841920",
+      demo: "https://www.linkedin.com/newsletters/hustlers-point-7233874067701841920"
     }
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     tags: ["AI", "Web Development", "Python"],
     links: {
       github: "https://github.com/neerajthammali",
-      demo: "#"
+      demo: "https://buildersbunker.vercel.app/"
     }
   }
 ];
