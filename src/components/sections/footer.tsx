@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Linkedin, Github, Instagram, Mail, Phone } from "lucide-react";
+import { Linkedin, Github, Instagram } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const socialLinks = [
     { href: "https://github.com/neerajthammali", label: "GitHub", icon: <Github className="h-5 w-5" /> },
@@ -18,16 +20,11 @@ export function Footer() {
                 <p className="text-muted-foreground">
                     I'm currently available for freelance work and open to discussing new projects. Feel free to reach out.
                 </p>
-                <div className="space-y-4">
-                  <a href="mailto:neerajtammali2021@gmail.com" className="flex items-center justify-center gap-3 text-foreground hover:text-primary transition-colors">
-                    <Mail className="h-5 w-5" />
-                    <span>neerajtammali2021@gmail.com</span>
-                  </a>
-                   <a href="mailto:neerajtammali2021@gmail.com?subject=Request%20for%20a%20call" className="flex items-center justify-center gap-3 text-foreground hover:text-primary transition-colors">
-                    <Phone className="h-5 w-5" />
-                    <span>Request a call</span>
-                  </a>
-                </div>
+                <Button asChild size="lg">
+                  <Link href="/contact">
+                    Contact Me <ArrowRight className="ml-2" />
+                  </Link>
+                </Button>
                 <div className="flex items-center justify-center gap-4 pt-4">
                     {socialLinks.map(link => (
                         <Button key={link.label} variant="outline" size="icon" asChild>

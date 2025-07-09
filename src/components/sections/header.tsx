@@ -18,7 +18,7 @@ const navLinksData = [
   { href: "/about", label: "About", icon: Info },
   { href: "#skills", label: "Skills", icon: Star },
   { href: "#projects", label: "Projects", icon: Lightbulb },
-  { href: "#contact", label: "Contact", icon: Mail },
+  { href: "/contact", label: "Contact", icon: Mail },
 ];
 
 export function Header() {
@@ -43,7 +43,7 @@ export function Header() {
     return link;
   });
 
-  const contactHref = pathname === '/' ? '#contact' : '/#contact';
+  const contactHref = '/contact';
 
   return (
     <header
@@ -74,7 +74,7 @@ export function Header() {
             </Link>
           ))}
            <Button asChild>
-             <a href={contactHref}>Get In Touch</a>
+             <Link href={contactHref}>Get In Touch</Link>
            </Button>
         </nav>
 
@@ -118,7 +118,7 @@ export function Header() {
                 </nav>
                 <SheetClose asChild>
                   <Button asChild className="mt-8 w-full">
-                    <a href={contactHref}>Get In Touch</a>
+                    <Link href={contactHref}>Get In Touch</Link>
                   </Button>
                 </SheetClose>
               </div>

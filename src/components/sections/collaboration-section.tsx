@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function CollaborationSection() {
   return (
@@ -15,9 +16,9 @@ export function CollaborationSection() {
                 </p>
                 <div className="mt-8">
                     <Button asChild size="lg">
-                        <a href="#contact">
+                        <Link href="/contact">
                             Get In Touch <ArrowRight className="ml-2" />
-                        </a>
+                        </Link>
                     </Button>
                 </div>
             </div>
