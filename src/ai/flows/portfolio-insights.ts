@@ -3,7 +3,6 @@
  * @fileOverview Generates insights about a portfolio.
  *
  * - portfolioInsights - A function that generates insights.
- * - PortfolioInsightsOutput - The return type for the portfolioInsights function.
  */
 
 import {ai} from '@/ai/genkit';
@@ -12,7 +11,7 @@ import {z} from 'genkit';
 const PortfolioInsightsOutputSchema = z.object({
   summary: z.string().describe('A summary of the portfolio owner\'s philosophy, synthesized from the information provided.'),
 });
-export type PortfolioInsightsOutput = z.infer<typeof PortfolioInsightsOutputSchema>;
+type PortfolioInsightsOutput = z.infer<typeof PortfolioInsightsOutputSchema>;
 
 
 export async function portfolioInsights(input: {}): Promise<PortfolioInsightsOutput> {
