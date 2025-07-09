@@ -1,4 +1,4 @@
-import { Award, Users, Briefcase } from "lucide-react";
+import { Award, Users, Briefcase, Calculator } from "lucide-react";
 
 const achievements = [
   {
@@ -16,6 +16,11 @@ const achievements = [
     value: "Diverse Freelancing",
     label: "Delivered solutions in web dev & graphic design.",
   },
+  {
+    icon: <Calculator className="w-8 h-8 text-accent" />,
+    value: "Traffic Calculator",
+    label: "Developed a tool for simple traffic volume analysis.",
+  },
 ];
 
 export function AchievementsSection() {
@@ -28,7 +33,7 @@ export function AchievementsSection() {
             A few highlights from my journey of building and creating.
           </p>
         </div>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
           {achievements.map((ach, index) => (
             <div key={index} className="flex flex-col items-center text-center p-8 bg-card rounded-lg border border-border">
               {ach.icon}
