@@ -14,7 +14,7 @@ export function AboutSection() {
         </CardHeader>
         <CardContent className="space-y-8">
             <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed">
-             My purpose is straightforward: I build things that create real value. Think of me as a bridge between two worlds. I use my civil engineering knowledge to design strong foundations, and my tech skills to build smart, helpful tools on top. Whether it's a physical structure or a digital product, I'm passionate about solving problems and creating tangible outcomes that make a difference.
+              I love to build things that matter. You could say I have a foot in two different worlds: one in the solid ground of civil engineering, where I design strong foundations, and the other in the fast-paced world of technology, where I build smart, helpful tools. Whether I'm working with concrete or code, my goal is always the same: to solve real problems and create things that make a tangible difference.
             </p>
             <div>
               <Button asChild>
