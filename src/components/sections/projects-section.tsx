@@ -32,7 +32,7 @@ const projects = [
   {
     title: "Hustler's Point",
     description: "A community for entrepreneurs where I share business research, strategies, and marketing tactics.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoc8jQN73279mFPvYjo3IrG5FIJL-TPwc-6pw7uN9WNUugPEw9srUTjTMDbk8u3n_po8TaiHCE5SF6Eg82snZfFEQmYDgBdxLGo2wKeLpZahfcBdUj6CW63Bwrt0QtLVTstP2X5O7ME9QufxdMdFIXulN5t_pPra7y2yxnhWbJTLZu4m9d8ubnLQM4sDb/s500/1000805041.jpg",
     hint: "community branding",
     tags: ["Community", "Content Creation", "Business"],
     links: {
