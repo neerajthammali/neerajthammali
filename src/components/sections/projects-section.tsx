@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
+import Image from "@/assets";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,7 @@ const projects = [
   {
     title: "ProjectWise",
     description: "A SaaS product designed for small-scale contractors and builders to manage their projects efficiently.",
-    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL9zNDnGZhRy3fXRO6-W3Ep3OMxSVQQ90FG78MjnYhqKBMk8gdaYOKFMn6cX2zVIQTA38BIiVDQOhafC2plxeTMquQN-mKVtOdkAep0vxUX_bfbrz2ElwV7QbR7J3e4mydNgxehd8C3oBNq_vBKUrHjUs3Cm-cjEzHlnTUyCvSgq_QslqUR-OQOr5Q7E1Z/s600/1000805365.png",
+    image: "assets/20250710_120110_0001.png",
     hint: "saas dashboard project",
     tags: ["SaaS", "Web Development", "Project Management"],
     links: {
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Manual Traffic Calculator",
     description: "A traffic engineering project for simple traffic volume calculation by differentiating vehicle types.",
-    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4M1K5N-3JxHPtDkYYhWX9_X6qDvuac9_2Ub_pTUlL9EqX1_komg0dJ2sKI9f2TcMTCHuKSggaB2x51kGxS8t0uP9AcBDmNce-fPIYZQ0MjyTfY1BYSIaQSPQWp4wjsmOscCxM52-8vD9Q25UDFDXwM8MxaAjCNCW1To5awiBlou-9FHgy4iRrTTXIwVvX/s600/1000805364.png",
+    image: "assets/20250710_120110_0000.png",
     hint: "traffic engineering chart",
     tags: ["Civil Engineering", "Data Analysis"],
     links: {
@@ -32,7 +32,7 @@ const projects = [
   {
     title: "Hustler's Point",
     description: "A community for entrepreneurs where I share business research, strategies, and marketing tactics.",
-    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCoc8jQN73279mFPvYjo3IrG5FIJL-TPwc-6pw7uN9WNUugPEw9srUTjTMDbk8u3n_po8TaiHCE5SF6Eg82snZfFEQmYDgBdxLGo2wKeLpZahfcBdUj6CW63Bwrt0QtLVTstP2X5O7ME9QufxdMdFIXulN5t_pPra7y2yxnhWbJTLZu4m9d8ubnLQM4sDb/s500/1000805041.jpg",
+    image: "assets/1724249737179.jpeg",
     hint: "community branding",
     tags: ["Community", "Content Creation", "Business"],
     links: {
@@ -43,7 +43,7 @@ const projects = [
   {
     title: "AI Chatbot Integration",
     description: "Integrated a custom AI chatbot into a web application to improve user engagement and provide instant support.",
-    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgND71BXZc12k6O9iZOmGj2tFpKXaND6BR9Xvf4WOxHLc9e5A8VP8jLiKTSsvaXfk2i4a2bXlghyphenhyphentdoOG6PZyhJJ2aJB6vut9uHA6mk-LRePMHL-uwzIb_jufPA2N7yBx9On5MZ1Hoj1Nzvdf-w6KoC4vaRyH99UT_20NCYWL6xER1Fj867_nEndEPfCJC5/s600/1000805366.png",
+    image: "assets/20250710_120110_0002.png",
     hint: "ai chatbot code",
     tags: ["AI", "Web Development", "Python"],
     links: {
