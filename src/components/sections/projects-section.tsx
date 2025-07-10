@@ -9,7 +9,7 @@ const projects = [
   {
     title: "ProjectWise",
     description: "A SaaS product designed for small-scale contractors and builders to manage their projects efficiently.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL9zNDnGZhRy3fXRO6-W3Ep3OMxSVQQ90FG78MjnYhqKBMk8gdaYOKFMn6cX2zVIQTA38BIiVDQOhafC2plxeTMquQN-mKVtOdkAep0vxUX_bfbrz2ElwV7QbR7J3e4mydNgxehd8C3oBNq_vBKUrHjUs3Cm-cjEzHlnTUyCvSgq_QslqUR-OQOr5Q7E1Z/s600/1000805365.png",
     hint: "saas dashboard project",
     tags: ["SaaS", "Web Development", "Project Management"],
     links: {
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Manual Traffic Calculator",
     description: "A traffic engineering project for simple traffic volume calculation by differentiating vehicle types.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4M1K5N-3JxHPtDkYYhWX9_X6qDvuac9_2Ub_pTUlL9EqX1_komg0dJ2sKI9f2TcMTCHuKSggaB2x51kGxS8t0uP9AcBDmNce-fPIYZQ0MjyTfY1BYSIaQSPQWp4wjsmOscCxM52-8vD9Q25UDFDXwM8MxaAjCNCW1To5awiBlou-9FHgy4iRrTTXIwVvX/s600/1000805364.png",
     hint: "traffic engineering chart",
     tags: ["Civil Engineering", "Data Analysis"],
     links: {
@@ -43,7 +43,7 @@ const projects = [
   {
     title: "AI Chatbot Integration",
     description: "Integrated a custom AI chatbot into a web application to improve user engagement and provide instant support.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgND71BXZc12k6O9iZOmGj2tFpKXaND6BR9Xvf4WOxHLc9e5A8VP8jLiKTSsvaXfk2i4a2bXlghyphenhyphentdoOG6PZyhJJ2aJB6vut9uHA6mk-LRePMHL-uwzIb_jufPA2N7yBx9On5MZ1Hoj1Nzvdf-w6KoC4vaRyH99UT_20NCYWL6xER1Fj867_nEndEPfCJC5/s600/1000805366.png",
     hint: "ai chatbot code",
     tags: ["AI", "Web Development", "Python"],
     links: {
